@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'rking/ag.vim'
+Bundle 'nanotech/jellybeans.vim'
 filetype plugin indent on
 
 
@@ -35,7 +36,8 @@ set smartcase
 set hlsearch
 set number
 set ruler
-colors jellybeans
+
+
 autocmd BufNewFile,BufRead *.json set ft=javascript
 set shiftwidth=2
 set tabstop=4
@@ -50,3 +52,7 @@ set nobomb
 set termencoding=utf-8
 set nowrap
 set fileencodings=utf-8,iso-8859-15
+
+"color scheme
+set t_Co=256
+colors jellybeans 
