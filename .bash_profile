@@ -1,9 +1,5 @@
-#  Customize BASH PS1 prompt to show current GIT repository and branch.
-#  by Mike Stewart - http://MediaDoneRight.com
 
-#  SETUP CONSTANTS
-#  Bunch-o-predefined colors.  Makes reading code easier than escape sequences.
-#  I don't remember where I found this.  o_O
+#  SETUP CONSTANTS compliments of Mike Stewart - http://MediaDoneRight.com 
 
 # Reset
 Color_Off="\033[0m"       # Text Reset
@@ -98,9 +94,9 @@ __git_it() {
   ps1=$(__git_ps1 "%s");
   [ -z "$ps1" ] && return;
   p=($ps1)
-  [[ "$ps1" == *\** ]] && echo -e $BRed" (${p[0]})"$Color_Off && return;
-  [[ "$ps1" == *\+* ]] && echo -e $BGreen" (${p[0]})"$Color_Off && return;
-  [[ "$ps1" == *\%* ]] && echo -e $BYellow" (${p[0]})"$Color_Off && return;
+  [[ "$ps1" == *\** ]] && echo -e $Red" (${p[0]})"$Color_Off && return;
+  [[ "$ps1" == *\+* ]] && echo -e $Green" (${p[0]})"$Color_Off && return;
+  [[ "$ps1" == *\%* ]] && echo -e $Yellow" (${p[0]})"$Color_Off && return;
   echo -e " (${p[0]})"
 }
 
