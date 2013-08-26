@@ -15,6 +15,9 @@ filetype plugin indent on
 "ctrlp custom ignore 
 let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|build)$'
 
+"netrw
+let g:netrw_liststyle=3
+
 "powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 if ! has('gui_running')
@@ -28,6 +31,7 @@ endif
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
+
 " original repos on github
 syntax on
 set incsearch
@@ -39,10 +43,12 @@ set ruler
 
 
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.less set ft=css
 set shiftwidth=2
 set tabstop=4
 set expandtab
 set smarttab autoindent
+set backspace=indent,eol,start
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set nobackup
 set noswapfile
