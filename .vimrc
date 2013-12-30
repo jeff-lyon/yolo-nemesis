@@ -42,8 +42,9 @@ set number
 set ruler
 
 
+autocmd BufNewFile,BufRead *.json,*.coffee set ft=javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
-autocmd BufNewFile,BufRead *.less set ft=css
+
 set shiftwidth=2
 set tabstop=4
 set expandtab
