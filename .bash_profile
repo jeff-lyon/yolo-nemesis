@@ -1,4 +1,11 @@
 
+GCLOUD=core
+USER=jlyon
+PASSWORD=Julien!scute
+
+
+source ~/.profile
+
 #  SETUP CONSTANTS compliments of Mike Stewart - http://MediaDoneRight.com 
 
 # Reset
@@ -102,6 +109,6 @@ __git_it() {
 
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1=$BCyan"\h:\W \u"$IBlack$Color_Off'$(__git_it)$ '
+export PS1="\[$BCyan\]\h:\W \u\[$IBlack\]\[$Color_Off\]"'$(__git_it)$ '
 
 
